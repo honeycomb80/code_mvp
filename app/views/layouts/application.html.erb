@@ -20,10 +20,16 @@
 
 <% end %>
 
+
 <h1 id="logo"><a href="/">code mvp</a></h1>
 </div>
 
 <%= yield %>
+
+<% if flash[:notice] %>
+    <div class="notice"><%= flash[:notice] %></div>
+  <% end %>
+
 
 
 </body>

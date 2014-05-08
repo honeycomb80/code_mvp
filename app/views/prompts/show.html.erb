@@ -1,13 +1,13 @@
 <% if user_signed_in? %>
 
-<p id="marker">Question:  <%= @prompt.id%></p>
+<p id="marker"><%= @prompt.id%></p>
 
 <div class="promptbox">
 	<p id="actual_prompt"><%= @prompt.prompt%></p>
 
-	<form action="checkanswer/<%= @prompt.id%>" method="get">
-		<input type="text" name="user_answer" placeholder="answer">
-		<input type="submit">
+	<form action="<%= @prompt.id%>/checkanswer" method="get">
+		<input id="answerbox" type="text" name="user_answer" placeholder="answer">
+		<input id="answerbutton" type="submit">
 	</form>
 </div>
 
