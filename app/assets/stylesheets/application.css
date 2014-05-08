@@ -13,6 +13,7 @@
  */
 
 /*font-family: 'Inconsolata';*/
+/*font-family: 'Lora', serif;*/
 
 #logo a {
 	position: relative;
@@ -69,6 +70,43 @@
 	list-style-image: none;
 	list-style-type: none;
 }
+.splashbox {
+	position:relative;
+	border: 5px solid #7f8c8d;
+	text-align: center;
+	left: 10%;
+	top: 10%;
+	bottom: 10%;
+	width: 80%;
+	border-radius: 1em;
+}
+
+.splashbox p {
+	font-family: 'Inconsolata';
+	font-size: 2.5em;
+	color: #7f8c8d;
+	text-align: left;
+	padding-left: 5%;
+}
+
+.start {
+	position: relative;
+	font-family: 'Raleway', sans-serif;
+	font-weight: bold;
+	font-size: 1.2em;
+	color: #FFFFFF;
+	background-color: #2ecc71;
+	border: none;
+	margin-top: 5%;
+	height: 4em;
+	width: 8em;
+	margin-left: 42%;
+}
+
+.start:hover{
+	background-color: #27ae60;
+	cursor: pointer;
+}
 
 .form {
 	font-size: 1em;
@@ -76,7 +114,7 @@
 }
 
 .form input {
-	font-family: 'Lora', serif;
+	font-family: 'Raleway', sans-serif;
 	font-size: 18px;
 	border: 1px solid #7f8c8d;
 	border-radius: 3px;
@@ -106,8 +144,6 @@
 	padding-right: 5%;
 }
 
-#
-
 #marker {
 	position: relative;
 	padding-left: 20%;
@@ -126,10 +162,21 @@
 	top: 10%;
 }
 
-#actual_prompt {
+#p1 {
+	position: relative;
 	font-family: 'Inconsolata';
 	font-size: 2em;
 	color: #F7D358;
-	text-align: center;
+	padding-right: 10%;
 	padding-top: 1em;
 }
+
+#p2 {
+	position: relative;
+	font-family: 'Inconsolata';
+	font-size: 2em;
+	color: #F7D358;
+	padding-left: 10%;
+	padding-top: 1em;
+}
+

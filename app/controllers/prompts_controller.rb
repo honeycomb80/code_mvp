@@ -5,7 +5,6 @@ class PromptsController < ApplicationController
 
 	def show
 		@prompt = PromptsData.find(params[:id])
-		@promptsData = PromptsData.new
 	end
 
 	def check
@@ -17,7 +16,7 @@ class PromptsController < ApplicationController
 		if user_answer == real_answer
 			redirect_to prompt_path(nextprompt)
 		else
-			flash[:notice] = "Try Again"
+			# flash[:notice] = "Try Again"
 			redirect_to prompt_path(prompt)
 
 		end

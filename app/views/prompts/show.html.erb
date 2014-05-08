@@ -3,13 +3,13 @@
 <p id="marker"><%= @prompt.id%></p>
 
 <div class="promptbox">
-	<p id="actual_prompt"><%= @prompt.prompt%></p>
+</div>
 
+	<h3 id="p1"><%= @prompt.prompt_1%></h3>
 	<form action="<%= @prompt.id%>/checkanswer" method="get">
 		<input id="answerbox" type="text" name="user_answer" placeholder="answer">
 		<input id="answerbutton" type="submit">
 	</form>
-</div>
-
+	<h3 id="p2"><%= @prompt.prompt_2%></h3>	
 
 <%end%>
