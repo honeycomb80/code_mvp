@@ -32,14 +32,14 @@
 }
 
 .header_links a {
-	font-family: 'Lora', serif;
+	font-family: 'Raleway', sans-serif;
 	color: #FFFFFF;
 	text-decoration: none;
 	padding: 15px;
 }
 
 #header li {
-	font-family: 'Lora', serif;
+	font-family: 'Raleway', sans-serif;
 	list-style-image: none;
 	list-style-type: none;
 	float: right;
@@ -54,7 +54,7 @@
 }
 
 .devise {
-	font-family: 'Lora', serif;
+	font-family: 'Raleway', sans-serif;
 	background-color: #FFFFFF;
 	line-height: 1.5;
 	text-align: center;
@@ -71,7 +71,7 @@
 }
 
 .form {
-	font-size: 14em;
+	font-size: 1em;
 	color: #7f8c8d;
 }
 
@@ -84,7 +84,7 @@
 }
 
 .submit input[type="submit"]{
-	font-family: 'Lora', serif;
+	font-family: 'Raleway', sans-serif;
 	font-weight: bold;
 	font-size: 18px;
 	color: #FFFFFF;
@@ -103,7 +103,7 @@
 .remem {
 	font-size: 1em;
 	color: #7f8c8d;
-	padding-right: 95px;
+	padding-right: 5%;
 }
 
 #marker {
