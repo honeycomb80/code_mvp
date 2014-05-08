@@ -1,5 +1,10 @@
-<% unless user_signed_in? %>
+<% if user_signed_in? %>
 
-<h1>Question:<%= @prompt['id']%></h1>
+<p id="marker">Question:  <%= @prompt.id%></p>
 
-<p><%= @prompt['prompt']%></p>
+<div class="promptbox">
+	<p id="actual_prompt"><%= @prompt.prompt%></p>
+	
+</div>
+
+<%end%>

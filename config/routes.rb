@@ -1,8 +1,6 @@
 CodeMvp::Application.routes.draw do
   devise_for :users
   
-  get "/users/:id", to: "users#show"
-
   root 'prompts#index'
 
   resources :prompts
