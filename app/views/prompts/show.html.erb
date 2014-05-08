@@ -4,7 +4,11 @@
 
 <div class="promptbox">
 	<p id="actual_prompt"><%= @prompt.prompt%></p>
-	<div class="submit"><%= button_to "Answer" %></div>
+
+	<form action="checkanswer/<%= @prompt.id%>" method="get">
+		<input type="text" name="user_answer" placeholder="answer">
+		<input type="submit">
+	</form>
 </div>
 
 

@@ -4,6 +4,8 @@ CodeMvp::Application.routes.draw do
   root 'prompts#index'
 
   resources :prompts
+
+  get "checkanswer/:id" => "prompts#check"
 end
 
 
