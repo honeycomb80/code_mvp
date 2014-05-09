@@ -1,15 +1,14 @@
 <% if user_signed_in? %>
 
-<p id="marker"><%= @prompt.id%></p>
+<p id="marker"><%= @prompt.id%>.</p>
 
 <div class="promptbox">
-</div>
-
-	<h3 id="p1"><%= @prompt.prompt_1%></h3>
+	<p id="p1"><%= @prompt.prompt_1%></p>
 	<form action="<%= @prompt.id%>/checkanswer" method="get">
-		<input id="answerbox" type="text" name="user_answer" placeholder="answer">
+		<input id="answerbox" type="text" name="user_answer">
+	<p id="p2"><%= @prompt.prompt_2%></p>	
 		<input id="answerbutton" type="submit">
 	</form>
-	<h3 id="p2"><%= @prompt.prompt_2%></h3>	
+</div>
 
 <%end%>
