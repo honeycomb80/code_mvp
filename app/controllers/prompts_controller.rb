@@ -5,6 +5,9 @@ class PromptsController < ApplicationController
 
 	def show
 		@prompt = PromptsData.find(params[:id])
+		# if params[:id] == 1
+		# 	cookies[:incorrect] = 0
+		# end
 	end
 
 	def check
@@ -18,9 +21,7 @@ class PromptsController < ApplicationController
 		elsif user_answer == real_answer
 			redirect_to prompt_path(nextprompt)
 		else
-			incorrect
-			binding.pry
-			incorrect = (incorrect + 1)
+			# cookies[:incorrect] += 1
 			# flash[:notice] = "Try Again"
 			redirect_to prompt_path(prompt)
 		end
@@ -33,17 +34,17 @@ class PromptsController < ApplicationController
 	def finish
 		# binding.pry
 		@totalprompts = PromptsData.maximum("id").to_i
-		@totalcorrect = @totalprompts - incorrect
+		# @totalcorrect = @totalprompts - incorrect
 	end
 
 	private
 
-	def incorrect
-		session[:incorrect] ||= 0
-	end
+	# def incorrect
+	# 	session[:incorrect] ||= 0
+	# end
 
-	def incorrect=(var)
-		session[:incorrect] = var
-	end
+	# def incorrect=(var)
+	# 	session[:incorrect] = var
+	# end
 
 end
