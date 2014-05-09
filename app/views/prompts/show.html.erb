@@ -5,7 +5,7 @@
 <div class="promptbox">
 	<p id="p1"><%= @prompt.prompt_1%></p>
 	<form action="<%= @prompt.id%>/checkanswer" method="get">
-		<input id="answerbox" type="text" name="user_answer">
+		<input id="answerbox" type="text" name="user_answer" autofocus="true">
 	<p id="p2"><%= @prompt.prompt_2%></p>	
 		<input id="answerbutton" type="submit">
 	</form>

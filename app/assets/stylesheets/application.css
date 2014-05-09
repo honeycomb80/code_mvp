@@ -97,10 +97,10 @@
 	color: #FFFFFF;
 	background-color: #2ecc71;
 	border: none;
-	margin-top: 5%;
-	height: 4em;
+	height: 3em;
 	width: 8em;
-	margin-left: 42%;
+	left: 42%;
+	margin-top: 1%;
 }
 
 .start:hover{
