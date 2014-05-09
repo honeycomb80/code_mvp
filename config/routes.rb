@@ -6,6 +6,8 @@ CodeMvp::Application.routes.draw do
   resources :prompts
 
   get "prompts/:id/checkanswer" => "prompts#check"
+
+  get "/finish" => "prompts#finish"
 end
 
 

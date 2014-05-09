@@ -160,6 +160,19 @@
 	position: fixed;
 	left: 15%;
 	top: 30%;
+	border-radius: .5em;
+}
+
+#answers {
+	font-family: 'Inconsolata';
+	font-size: 2em;
+	color: #7f8c8d;
+	list-style-image: none;
+	list-style-type: none;
+	position: fixed;
+	display: inline-block;
+	left: 20%;
+	top: 60%;
 }
 
 #p1 {
@@ -189,7 +202,7 @@
 	font-family: 'Inconsolata';
 	width: 30%;
 	height: 1.5em;
-	margin: 4% 0 0 0;
+	margin: 5% 0 0 0;
 	border: none;
 }
 
@@ -198,10 +211,31 @@
 	right: 35%;
 	bottom: 40%;
 	font-family: 'Raleway', sans-serif;
-	font-size: 2em;
+	font-size: 1em;
+	height: 2em;
+	width: 6em;
 	color: #FFFFFF;
-	background-color: #e74c3c;
+	background-color: #2ecc71;
 	border: none;
 	margin: 5% 0 0 0;
+	display: none;
 }
 
+#answerbutton:hover{
+	background-color: #27ae60;
+	cursor: pointer;
+}
+
+#congrats {
+	font-family: 'Raleway', sans-serif;
+	font-size: 2em;
+	color: #7f8c8d;
+	text-align: center;
+}
+
+#score {
+	font-family: 'Raleway', sans-serif;
+	font-size: 2em;
+	color: #7f8c8d;
+	text-align: center;
+}
